@@ -18,7 +18,7 @@ provider:
   region: ${opt:region, 'eu-west-1'}
 
   #tracing:
-    #lambda: true
+   # lambda: true
     #apiGateway: true
 
   environment: 
