@@ -17,7 +17,18 @@ provider:
 
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'eu-west-1'}
+<<<<<<< HEAD
   
+=======
+
+  provider:
+  name: aws
+  runtime: nodejs12.x
+
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
+
+>>>>>>> cc4d5271f3575a3125038cd73829db094a49189e
   # enable AWS X-Ray Tracing
   tracing:
     lambda: true
