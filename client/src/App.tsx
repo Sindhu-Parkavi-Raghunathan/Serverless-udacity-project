@@ -35,10 +35,13 @@ export default class App extends Component<AppProps, AppState> {
 
   render() {
     return (
-      <div>
+      <div className="App section"> 
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Grid container stackable verticalAlign="middle">
             <Grid.Row>
+            <Grid.Column width={16}>
+              <div className="app-header"><h1>Flower Boutique</h1></div>
+              </Grid.Column>
               <Grid.Column width={16}>
                 <Router history={this.props.history}>
                   {this.generateMenu()}
@@ -47,6 +50,9 @@ export default class App extends Component<AppProps, AppState> {
                 </Router>
               </Grid.Column>
             </Grid.Row>
+            <Grid.Column width={16} textAlign={"center" }  >
+              <div className="app-footer"><footer id='footer-content'>©2020, All Rights reserved.</footer></div>
+            </Grid.Column>
           </Grid>
         </Segment>
       </div>

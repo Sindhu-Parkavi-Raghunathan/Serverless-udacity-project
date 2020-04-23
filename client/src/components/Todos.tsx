@@ -104,7 +104,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
   render() {
     return (
       <div>
-        <Header as="h1">TODOs</Header>
+        <Header as="h1">Flowers Available</Header>
 
         {this.renderCreateTodoInput()}
 
@@ -119,15 +119,15 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         <Grid.Column width={16}>
           <Input
             action={{
-              color: 'teal',
+              color: 'pink',
               labelPosition: 'left',
               icon: 'add',
-              content: 'New task',
+              content: 'New Flower Name',
               onClick: this.onTodoCreate
             }}
             fluid
             actionPosition="left"
-            placeholder="To change the world..."
+            placeholder="Add flowers to your everyday life..."
             onChange={this.handleNameChange}
           />
         </Grid.Column>
@@ -177,7 +177,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
               <Grid.Column width={1} floated="right">
                 <Button
                   icon
-                  color="blue"
+                  color="grey"
                   onClick={() => this.onEditButtonClick(todo.todoId)}
                 >
                   <Icon name="pencil" />
